@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Portfolio</title>
+<style>
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    margin: 20px 0;
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #666;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #888;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+h2, h3 {
+    color: #444;
+}
+
+#about, #projects, #contact {
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Section */
+.project {
+    margin: 30px 0;
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.project-image {
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-description {
+    flex: 1;
+    color: #555;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Stack sections vertically */
+    section {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    /* Adjust header text size */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* Stack project content vertically on small screens */
+    .project-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Reduce image size */
+    .project-image img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Adjust form input and textarea size */
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Adjust button size */
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+<h1>ALEX TAYENJAM</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- About Section -->
+<section id="about">
+<h2>About Me</h2>
+<p>Be good, do good. Loyalty and giving my will and hardship for the benefit of the organization, no matter what might be the scenario, by specializing in the required field, gaining knowledge, and developing new innovative ideas.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+<h2>Projects</h2>
+
+<!-- Project 1 -->
+<div class="project">
+<h3>Project 1: Online Student Result Management System</h3>
+<div class="project-content">
+<div class="project-image">
+<img src="./img11.jpeg" alt="SRMS">
+</div>
+<div class="project-description">
+<p><b><u>Description:</u></b> This project allows students to check and download their results in PDF form. Admin-based access is implemented to maintain the system efficiently using technologies such as PHP, MySQL, and HTML/CSS.</p>
+</div>
+</div>
+</div>
+
+<!-- Project 2 -->
+<div class="project">
+<h3>Project 2: Smart Lighting System</h3>
+<div class="project-content">
+<div class="project-image">
+<img src="./img22.jpeg" alt="FRAMS">
+</div>
+<div class="project-description">
+<p><b><u>Description:</u></b> Developing an IoT-based prototype on an Occupancy-based Street Lighting System for efficient and cost-effective energy usage.</p>
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Me</h2>
+<form action="#" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+
+</body>
+</html>
